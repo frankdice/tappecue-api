@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<nav id='sidebar'>
+	{% include nav.html %}
+</nav>
+
+<section id='content'>
+<p><b>
+This site and API are not maintained by Tappecue, please do not reach out to them with issues.
+</b><br>
+The Tappecue team was nice enough to share their API with me, and I wrote this front-end so others can interface with their Tappecue so they can extend the functionality.
+</br>
+Bug reports or issues should be directed to the <b><a href='https://github.com/frankdice/tappecue-api/issues'>Github for this project</a></b>
+</p>
+
+{% for post in site.posts %}
+  <article class='{{ post.type }}'>
+    <a name='{{ post.url }}' href='#{{ post.url }}'><h2>{% if post.type %}<code><b>{{ post.type }}</b> {{ post.apipath }}</code> {% endif %}{{ post.title }}</h2></a>
+    <section class='body'>
+      {{ post.content }}
+    </section>
+  </article>
+{% endfor %}
+</section>

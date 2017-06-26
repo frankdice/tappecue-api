@@ -1,0 +1,7 @@
+---
+exclude: ['README.markdown']
+permalink: ':title'
+highlighter: 'pygments'
+safe: false
+title: 'Tappecue Public API'
+base_api_url: "https://tappecue.babyvelociraptor.com"
