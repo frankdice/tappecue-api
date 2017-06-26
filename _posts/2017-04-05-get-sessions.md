@@ -13,7 +13,7 @@ This method returns a list of all current sessions associated with your Tappecue
 * The header must include "X-Auth-Header: \<Auth Token>"
 
 ##### Example
-`curl -H "X-Auth-Token: 11111111-1111-1111-1111-111111111111" {{ site.base_api_url }}{{ page.apipath }}`
+`curl -H "X-Auth-Token: <token>" {{ site.base_api_url }}{{ page.apipath }}`
 
 ### Response
 JSON list of all current sessions
