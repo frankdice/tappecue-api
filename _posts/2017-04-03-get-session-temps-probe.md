@@ -12,10 +12,19 @@ This method returns a specific probe's temperature from the session.
 ### Request
 * The header must include "X-Auth-Header: \<Auth Token>"
 
+## Example
+`curl -H "X-Auth-Token: 11111111-1111-1111-1111-111111111111" {{ site.base_api_url }}{{ page.apipath }}`
+
 ### Response
-JSON object of probe temperature from session (and other useful info)
+JSON object of an individual probe temperature data from session (and other useful info)
 
 ```{
-	timezone: 'US/Eastern'
+  "active": "1", 
+  "chamber": "1", 
+  "current_temp": "70 ", 
+  "last_update": "6/26/2017 3:25:36 PM", 
+  "max_temp": "275", 
+  "min_temp": "22", 
+  "name": "Ribs (chamber)", 
+  "wifi_disconnected": "0"
 }```
-

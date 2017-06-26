@@ -12,10 +12,52 @@ This method returns a list of all current sessions associated with your Tappecue
 ### Request
 * The header must include "X-Auth-Header: \<Auth Token>"
 
+##### Example
+`curl -H "X-Auth-Token: 11111111-1111-1111-1111-111111111111" {{ site.base_api_url }}{{ page.apipath }}`
+
 ### Response
-JSON object of current session's temperatures (and other useful info)
+JSON object of current session's temperature probe data (and other useful info)
 
 ```{
-	timezone: 'US/Eastern'
+  "1": {
+    "active": "0", 
+    "chamber": "0", 
+    "current_temp": "0  ", 
+    "last_update": "6/26/2017 3:25:36 PM", 
+    "max_temp": "0", 
+    "min_temp": "0", 
+    "name": " None", 
+    "wifi_disconnected": "0"
+  }, 
+  "2": {
+    "active": "0", 
+    "chamber": "0", 
+    "current_temp": "0  ", 
+    "last_update": "6/26/2017 3:25:36 PM", 
+    "max_temp": "0", 
+    "min_temp": "0", 
+    "name": " None", 
+    "wifi_disconnected": "0"
+  }, 
+  "3": {
+    "active": "1", 
+    "chamber": "1", 
+    "current_temp": "70 ", 
+    "last_update": "6/26/2017 3:25:36 PM", 
+    "max_temp": "275", 
+    "min_temp": "22", 
+    "name": "Ribs (chamber)", 
+    "wifi_disconnected": "0"
+  }, 
+  "4": {
+    "active": "0", 
+    "chamber": "0", 
+    "current_temp": "0  ", 
+    "last_update": "6/26/2017 3:25:36 PM", 
+    "max_temp": "0", 
+    "min_temp": "0", 
+    "name": " None", 
+    "wifi_disconnected": "0"
+  }
 }```
 

@@ -8,12 +8,15 @@ layout: null
 ---
 
 This method returns the user's current timezone.
-* Default timezone is US/Eastern
+* Default timezone is **US/Eastern**
 
 ### Request
-* The header must include 'X-Auth-Header: <Auth Token>
+* The header must include "X-Auth-Token: \<Auth Token>"
 
-### Response
+##### Example
+`curl -H "X-Auth-Token: 11111111-1111-1111-1111-111111111111" {{ site.base_api_url }}{{ page.apipath }}`
+
+### Response (JSON)
 ```{
-	timezone: 'US/Eastern'
+	"timezone": "US/Eastern"
 }```

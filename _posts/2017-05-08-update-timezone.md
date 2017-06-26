@@ -12,13 +12,21 @@ This method sets the user's timezone.
 ### Request
 * The header must include "X-Auth-Header: \<Auth Token>"
 
+Standard HTTP POST
+
 ```{
-	timezone: 'US/Central'
+	"timezone": "US/Central"
 }```
 
-### Response
-Sends back the timezone as a confirmation.
+All Available/Supported Timezones are available from the /timezone/all call.
+
+##### Example
+`curl -d "timezone=US/Central" -H "X-Auth-Token: 11111111-1111-1111-1111-111111111111" {{ site.base_api_url }}{{ page.apipath }}`
+
+### Response (JSON)
+Sends back the timezone as a JSON object for confirmation.
 
 ```{
-	timezone: 'US/Central'
+	"success": true,
+	"timezone": "US/Central"
 }```
