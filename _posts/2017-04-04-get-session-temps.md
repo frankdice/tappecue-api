@@ -7,7 +7,7 @@ category: 'Sessions'
 layout: null
 ---
 
-This method returns a list of all current sessions associated with your Tappecue account.
+This method returns a list of all available sensor temperatures for the given session.
 
 ### Request
 * The header must include "X-Auth-Header: \<Auth Token>"

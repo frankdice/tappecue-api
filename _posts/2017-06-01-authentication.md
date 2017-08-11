@@ -10,6 +10,11 @@ This method performs the login and sends back an authentication token that is re
 
 The session tokens are valid for 24 hours.
 
+##### Please note: You will need to use your existing Tappecue login credentials
+This API platform passes through the authentication details and generates a session token.
+
+##### Sessions can only be started from the Tappecue mobile app
+
 ### Request
 Standard POST request
 ```{
