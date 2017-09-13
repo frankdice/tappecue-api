@@ -19,7 +19,7 @@ This API platform passes through the authentication details and generates a sess
 Standard POST request
 ```{
 	username: <Tappecue Username>
-	Password: <Tappecue Password>
+	password: <Tappecue Password>
 }```
 
 ##### Example
