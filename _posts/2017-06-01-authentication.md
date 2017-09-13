@@ -27,10 +27,10 @@ Standard POST request
 
 ### Response (JSON)
 
-Sends back a json object containing an X-Auth-Header which needs to be included in all subsequent requests
+Sends back a json object containing an X-Auth-Token which needs to be included in all subsequent requests
 
 ```{
-	"X-Auth-Header": "<UUID>"
+	"X-Auth-Token": "<UUID>"
 }```
 
 ### Notes

@@ -10,7 +10,7 @@ layout: null
 This method sets the user's timezone.
 
 ### Request
-* The header must include "X-Auth-Header: \<Auth Token>"
+* The header must include "X-Auth-Token: \<Auth Token>"
 
 Standard HTTP POST
 

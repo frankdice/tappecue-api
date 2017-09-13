@@ -11,7 +11,7 @@ This method returns all currently supported timezones.
 * Default timezone is **US/Eastern**
 
 ### Request
-* The header must include "X-Auth-Header: \<Auth Token>"
+* The header must include "X-Auth-Token: \<Auth Token>"
 
 ##### Example
 `curl -H "X-Auth-Token: <token>" {{ site.base_api_url }}{{ page.apipath }}`
