@@ -9,6 +9,8 @@ layout: null
 
 This method returns a specific probe's temperature from the session.
 
+Please note that due to caching this temperature will only update every 2 minutes.
+
 ### Request
 * The header must include "X-Auth-Token: \<Auth Token>"
 
